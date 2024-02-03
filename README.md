@@ -5,6 +5,7 @@ This is a super simple example repository!
 Experiments:
 
 1. Script Injection
+
 Creating a issue with title - a";echo Got your secrets"
 " closes the double quotes in workflow line issue_title="${{ github.event.issue.title }}"
 Title is just "a", rest is interpreted as sript -> echo Got your secrets
