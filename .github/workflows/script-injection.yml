@@ -8,6 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign label
+        # to secure against script injection use a action so that script is not executed in any shell (handled therefore by GitHub); or use a env var.
+        # uses: @SomeAction
+        # env: # Avoids injection problem because issue title will be used and evaluated outside of shell as just text and not script.
+        #  TITLE: ${{ github.event.issue.title }}
+        # also adapt if [[ "$TITLE" == *"bug"* ]]; then
         run: |
           issue_title="${{ github.event.issue.title }}"
           if [[ "$issue_title" == *"bug"* ]]; then
