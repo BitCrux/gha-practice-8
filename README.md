@@ -1,3 +1,10 @@
+# Security & Permissions
+
+- Understanding Script Injection Attacks
+- Increasing Actions Safety
+- Understanding Permissions & Potential Issues
+- GITHUB_TOKEN & Managing Permissions
+
 # Example Repo
 
 This is a super simple example repository!
